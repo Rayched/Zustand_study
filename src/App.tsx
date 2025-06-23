@@ -1,17 +1,14 @@
 import React from 'react';
-import { useCounterStore } from './store/useStore';
+import { useCountStore } from './store/useStore';
 
 function App() {
-  /*
-  const count = useCounterStore((state) => state.count);
-  const setCount = useCounterStore((state) => state.setCount);
-  */
-  const {count, setCount}= useCounterStore();
+  const {count, addCount, resetCount} = useCountStore();
 
   return (
     <div>
       <h3>Click Here 👇</h3>
-      <button onClick={() => setCount(count + 1)}>Click me</button>
+      <button onClick={() => addCount(count + 1)}>Click me</button>
+      <button onClick={resetCount}>Reset</button>
       <h4>버튼 클릭 횟수: {count}</h4>
     </div>
   );
