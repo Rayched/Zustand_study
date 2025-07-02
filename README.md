@@ -4,6 +4,7 @@
 
 - [`Zustand` 상태 설계 패턴](/reports/Zustand%20상태%20설계%20패턴.md)
 - [`Zustand` 액션 설계 패턴](/reports/Zustand,%20액션%20설계%20패턴.md)
+- [`Zustand` 비동기 처리 방식](/reports/Zustand,%20비동기%20처리%20기법.md)
 
 ---
 

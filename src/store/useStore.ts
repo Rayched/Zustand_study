@@ -12,3 +12,4 @@ export const useCountStore = create<I_CountStore>((set) => ({
     addCount: () => set((prev) => ({count: prev.count + 1})),
     resetCount: () => set(() => ({count: 0}))
 }));
+

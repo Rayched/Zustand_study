@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useCountStore } from './store/useStore';
+import { TestFetch } from './store/outlines';
 
 function App() {
   const {count, addCount, resetCount} = useCountStore();
+
+  const Tests = TestFetch();
+
+  useEffect(() => console.log(Tests));
 
   return (
     <div>
